@@ -20,9 +20,9 @@ public class RequestReplyCommand implements Command{
 				if(noti1.getProperty("Reciever").toString().equals(myemail)
 						&&noti1.getProperty("Type").toString().equals("RequestReplyCommand")
 						&&noti1.getProperty("State").toString().equals("unread")){
-					//Sender = noti1.getProperty("Sender").toString();
-//					noti1.setProperty("State", "read");
-//					datastore.put(noti1);
+					Sender = noti1.getProperty("Sender").toString();
+					noti1.setProperty("State", "read");
+					datastore.put(noti1);
 					result = obj.checkRequest(myemail);
 				}
 			}

@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\SW2\FCI-SWEII-SocialNetwork-master\FCI-SWEII-SocialNetwork-master1\src\backEndTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods, 3 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PageEntityTest" hash-for-method="getPageSearch(com.FCI.SWE.Models.PageEntity@47cee369, emy2, hossam ghaly)">getPageSearch(com.FCI.SWE.Models.PageEntity@47cee369, emy2, hossam ghaly)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PageEntityTest" hash-for-method="likePage(com.FCI.SWE.Models.PageEntity@24c96a1a, emy2, hossam ghaly)">likePage(com.FCI.SWE.Models.PageEntity@24c96a1a, emy2, hossam ghaly)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PostEntityTest" hash-for-method="likePage">likePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="LoginService(OK, aml3, 123)">LoginService(OK, aml3, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="LoginService(OK, emy3, 123)">LoginService(OK, emy3, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="acceptRq(OK, emy3)">acceptRq(OK, emy3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="acceptRq(OK, aml3)">acceptRq(OK, aml3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.UserEntityTest" hash-for-method="checkRequest(aml2, emy2)">checkRequest(aml2, emy2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.UserEntityTest" hash-for-method="checkRequest(emy2, amir2)">checkRequest(emy2, amir2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="checkRq(OK, emy3)">checkRq(OK, emy3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="checkRq(OK, aml3)">checkRq(OK, aml3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="createPage(OK, aml3, yaserGalalLovers, actor, media)">createPage(OK, aml3, yaserGalalLovers, actor, media)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="createPage(OK, emy3, aasrYasenLovers, actor, media)">createPage(OK, emy3, aasrYasenLovers, actor, media)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PostEntityTest" hash-for-method="createPost(true, emy2, emy2, new, bad, public)">createPost(true, emy2, emy2, new, bad, public)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PostEntityTest" hash-for-method="createPost(true, aml2, aml2, hii, happy, public)">createPost(true, aml2, aml2, hii, happy, public)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="createpost(OK, emy3, aml3, brd gaaamd, sick, aml3)">createpost(OK, emy3, aml3, brd gaaamd, sick, aml3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="createpost(OK, emy3, emy3, ya rb n3dy safy, hopeful, public)">createpost(OK, emy3, emy3, ya rb n3dy safy, hopeful, public)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PostEntityTest" hash-for-method="getMostTags()">getMostTags()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="likePageService(OK, aml3, aasrYasenLovers)">likePageService(OK, aml3, aasrYasenLovers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="likePageService(OK, emy3, yaserGalalLovers)">likePageService(OK, emy3, yaserGalalLovers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PostEntityTest" hash-for-method="likePost(true, 2)">likePost(true, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="backEndTestBackage.PostEntityTest" hash-for-method="likePost(true, 6)">likePost(true, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="registrationService(OK, emy3, emy3, 123)">registrationService(OK, emy3, emy3, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="registrationService(OK, aml3, aml3, 123)">registrationService(OK, aml3, aml3, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="searchFriend(OK, emy3, aml3)">searchFriend(OK, emy3, aml3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="searchFriend(OK, aml3, emy3)">searchFriend(OK, aml3, emy3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="searchPage(OK, emy3, yaserGalalLovers)">searchPage(OK, emy3, yaserGalalLovers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="searchPage(OK, aml3, aasrYasenLovers)">searchPage(OK, aml3, aasrYasenLovers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="sendMsg(OK, emy3, aml3, hi)">sendMsg(OK, emy3, aml3, hi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="sendMsg(OK, aml3, emy3, ezayk)">sendMsg(OK, aml3, emy3, ezayk)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="sendRequest(OK, aml3, emy3)">sendRequest(OK, aml3, emy3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="showAllMsg(OK, emy3, aml3)">showAllMsg(OK, emy3, aml3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="showAllMsg(OK, aml3, emy3)">showAllMsg(OK, aml3, emy3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="showNewMsg(OK, aml3, emy3)">showNewMsg(OK, aml3, emy3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="frontEndBackage.serviceTest" hash-for-method="showNewMsg(OK, emy3, aml3)">showNewMsg(OK, emy3, aml3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">backEndTestBackage.PostEntityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePage">
+                  </a> <!-- likePage -->
+                  <span class="method-name">likePage</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method likePage requires 1 parameters but 0 were supplied in the @Test annotation.
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">backEndTestBackage.PageEntityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageSearch(com.FCI.SWE.Models.PageEntity@47cee369, emy2, hossam ghaly)">
+                  </a> <!-- getPageSearch(com.FCI.SWE.Models.PageEntity@47cee369, emy2, hossam ghaly) -->
+                  <span class="method-name">getPageSearch</span>
+                  <span class="parameters">(com.FCI.SWE.Models.PageEntity@47cee369, emy2, hossam ghaly)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [com.FCI.SWE.Models.PageEntity@47cee369]
+	at backEndTestBackage.PageEntityTest.getPageSearch(PageEntityTest.java:18)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePage(com.FCI.SWE.Models.PageEntity@24c96a1a, emy2, hossam ghaly)">
+                  </a> <!-- likePage(com.FCI.SWE.Models.PageEntity@24c96a1a, emy2, hossam ghaly) -->
+                  <span class="method-name">likePage</span>
+                  <span class="parameters">(com.FCI.SWE.Models.PageEntity@24c96a1a, emy2, hossam ghaly)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [com.FCI.SWE.Models.PageEntity@24c96a1a]
+	at backEndTestBackage.PageEntityTest.likePage(PageEntityTest.java:29)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">frontEndBackage.serviceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginService(OK, aml3, 123)">
+                  </a> <!-- LoginService(OK, aml3, 123) -->
+                  <span class="method-name">LoginService</span>
+                  <span class="parameters">(OK, aml3, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginService(OK, emy3, 123)">
+                  </a> <!-- LoginService(OK, emy3, 123) -->
+                  <span class="method-name">LoginService</span>
+                  <span class="parameters">(OK, emy3, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptRq(OK, emy3)">
+                  </a> <!-- acceptRq(OK, emy3) -->
+                  <span class="method-name">acceptRq</span>
+                  <span class="parameters">(OK, emy3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptRq(OK, aml3)">
+                  </a> <!-- acceptRq(OK, aml3) -->
+                  <span class="method-name">acceptRq</span>
+                  <span class="parameters">(OK, aml3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkRq(OK, emy3)">
+                  </a> <!-- checkRq(OK, emy3) -->
+                  <span class="method-name">checkRq</span>
+                  <span class="parameters">(OK, emy3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkRq(OK, aml3)">
+                  </a> <!-- checkRq(OK, aml3) -->
+                  <span class="method-name">checkRq</span>
+                  <span class="parameters">(OK, aml3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPage(OK, aml3, yaserGalalLovers, actor, media)">
+                  </a> <!-- createPage(OK, aml3, yaserGalalLovers, actor, media) -->
+                  <span class="method-name">createPage</span>
+                  <span class="parameters">(OK, aml3, yaserGalalLovers, actor, media)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPage(OK, emy3, aasrYasenLovers, actor, media)">
+                  </a> <!-- createPage(OK, emy3, aasrYasenLovers, actor, media) -->
+                  <span class="method-name">createPage</span>
+                  <span class="parameters">(OK, emy3, aasrYasenLovers, actor, media)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createpost(OK, emy3, aml3, brd gaaamd, sick, aml3)">
+                  </a> <!-- createpost(OK, emy3, aml3, brd gaaamd, sick, aml3) -->
+                  <span class="method-name">createpost</span>
+                  <span class="parameters">(OK, emy3, aml3, brd gaaamd, sick, aml3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createpost(OK, emy3, emy3, ya rb n3dy safy, hopeful, public)">
+                  </a> <!-- createpost(OK, emy3, emy3, ya rb n3dy safy, hopeful, public) -->
+                  <span class="method-name">createpost</span>
+                  <span class="parameters">(OK, emy3, emy3, ya rb n3dy safy, hopeful, public)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePageService(OK, aml3, aasrYasenLovers)">
+                  </a> <!-- likePageService(OK, aml3, aasrYasenLovers) -->
+                  <span class="method-name">likePageService</span>
+                  <span class="parameters">(OK, aml3, aasrYasenLovers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePageService(OK, emy3, yaserGalalLovers)">
+                  </a> <!-- likePageService(OK, emy3, yaserGalalLovers) -->
+                  <span class="method-name">likePageService</span>
+                  <span class="parameters">(OK, emy3, yaserGalalLovers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationService(OK, emy3, emy3, 123)">
+                  </a> <!-- registrationService(OK, emy3, emy3, 123) -->
+                  <span class="method-name">registrationService</span>
+                  <span class="parameters">(OK, emy3, emy3, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationService(OK, aml3, aml3, 123)">
+                  </a> <!-- registrationService(OK, aml3, aml3, 123) -->
+                  <span class="method-name">registrationService</span>
+                  <span class="parameters">(OK, aml3, aml3, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchFriend(OK, emy3, aml3)">
+                  </a> <!-- searchFriend(OK, emy3, aml3) -->
+                  <span class="method-name">searchFriend</span>
+                  <span class="parameters">(OK, emy3, aml3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchFriend(OK, aml3, emy3)">
+                  </a> <!-- searchFriend(OK, aml3, emy3) -->
+                  <span class="method-name">searchFriend</span>
+                  <span class="parameters">(OK, aml3, emy3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPage(OK, emy3, yaserGalalLovers)">
+                  </a> <!-- searchPage(OK, emy3, yaserGalalLovers) -->
+                  <span class="method-name">searchPage</span>
+                  <span class="parameters">(OK, emy3, yaserGalalLovers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPage(OK, aml3, aasrYasenLovers)">
+                  </a> <!-- searchPage(OK, aml3, aasrYasenLovers) -->
+                  <span class="method-name">searchPage</span>
+                  <span class="parameters">(OK, aml3, aasrYasenLovers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendMsg(OK, emy3, aml3, hi)">
+                  </a> <!-- sendMsg(OK, emy3, aml3, hi) -->
+                  <span class="method-name">sendMsg</span>
+                  <span class="parameters">(OK, emy3, aml3, hi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendMsg(OK, aml3, emy3, ezayk)">
+                  </a> <!-- sendMsg(OK, aml3, emy3, ezayk) -->
+                  <span class="method-name">sendMsg</span>
+                  <span class="parameters">(OK, aml3, emy3, ezayk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendRequest(OK, aml3, emy3)">
+                  </a> <!-- sendRequest(OK, aml3, emy3) -->
+                  <span class="method-name">sendRequest</span>
+                  <span class="parameters">(OK, aml3, emy3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showAllMsg(OK, emy3, aml3)">
+                  </a> <!-- showAllMsg(OK, emy3, aml3) -->
+                  <span class="method-name">showAllMsg</span>
+                  <span class="parameters">(OK, emy3, aml3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showAllMsg(OK, aml3, emy3)">
+                  </a> <!-- showAllMsg(OK, aml3, emy3) -->
+                  <span class="method-name">showAllMsg</span>
+                  <span class="parameters">(OK, aml3, emy3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showNewMsg(OK, aml3, emy3)">
+                  </a> <!-- showNewMsg(OK, aml3, emy3) -->
+                  <span class="method-name">showNewMsg</span>
+                  <span class="parameters">(OK, aml3, emy3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showNewMsg(OK, emy3, aml3)">
+                  </a> <!-- showNewMsg(OK, emy3, aml3) -->
+                  <span class="method-name">showNewMsg</span>
+                  <span class="parameters">(OK, emy3, aml3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">backEndTestBackage.PostEntityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPost(true, emy2, emy2, new, bad, public)">
+                  </a> <!-- createPost(true, emy2, emy2, new, bad, public) -->
+                  <span class="method-name">createPost</span>
+                  <span class="parameters">(true, emy2, emy2, new, bad, public)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPost(true, aml2, aml2, hii, happy, public)">
+                  </a> <!-- createPost(true, aml2, aml2, hii, happy, public) -->
+                  <span class="method-name">createPost</span>
+                  <span class="parameters">(true, aml2, aml2, hii, happy, public)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMostTags()">
+                  </a> <!-- getMostTags() -->
+                  <span class="method-name">getMostTags</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePost(true, 2)">
+                  </a> <!-- likePost(true, 2) -->
+                  <span class="method-name">likePost</span>
+                  <span class="parameters">(true, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="likePost(true, 6)">
+                  </a> <!-- likePost(true, 6) -->
+                  <span class="method-name">likePost</span>
+                  <span class="parameters">(true, 6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">backEndTestBackage.UserEntityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkRequest(aml2, emy2)">
+                  </a> <!-- checkRequest(aml2, emy2) -->
+                  <span class="method-name">checkRequest</span>
+                  <span class="parameters">(aml2, emy2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkRequest(emy2, amir2)">
+                  </a> <!-- checkRequest(emy2, amir2) -->
+                  <span class="method-name">checkRequest</span>
+                  <span class="parameters">(emy2, amir2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\SW2\FCI-SWEII-SocialNetwork-master\FCI-SWEII-SocialNetwork-master1\src\backEndTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;backEndTestBackage.UserEntityTest&quot;/&gt;
+      &lt;class name=&quot;backEndTestBackage.PageEntityTest&quot;/&gt;
+      &lt;class name=&quot;backEndTestBackage.PostEntityTest&quot;/&gt;
+      &lt;class name=&quot;frontEndBackage.serviceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">PageEntityTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getPageSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">likePage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">PostEntityTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createPost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMostTags</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">likePage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">likePost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Service</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginService</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">acceptRq</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkRq</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createpost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">likePageService</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registrationService</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchFriend</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sendMsg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sendRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">showAllMsg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">showNewMsg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">UserEntityTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkRequest')
+data.setCell(0, 2, 'backEndTestBackage.UserEntityTest')
+data.setCell(0, 3, 428);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createPost')
+data.setCell(1, 2, 'backEndTestBackage.PostEntityTest')
+data.setCell(1, 3, 122);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'acceptRq')
+data.setCell(2, 2, 'frontEndBackage.serviceTest')
+data.setCell(2, 3, 39);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginService')
+data.setCell(3, 2, 'frontEndBackage.serviceTest')
+data.setCell(3, 3, 39);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'showAllMsg')
+data.setCell(4, 2, 'frontEndBackage.serviceTest')
+data.setCell(4, 3, 38);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'acceptRq')
+data.setCell(5, 2, 'frontEndBackage.serviceTest')
+data.setCell(5, 3, 32);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'showAllMsg')
+data.setCell(6, 2, 'frontEndBackage.serviceTest')
+data.setCell(6, 3, 27);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkRq')
+data.setCell(7, 2, 'frontEndBackage.serviceTest')
+data.setCell(7, 3, 23);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createPage')
+data.setCell(8, 2, 'frontEndBackage.serviceTest')
+data.setCell(8, 3, 22);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createpost')
+data.setCell(9, 2, 'frontEndBackage.serviceTest')
+data.setCell(9, 3, 22);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'sendMsg')
+data.setCell(10, 2, 'frontEndBackage.serviceTest')
+data.setCell(10, 3, 20);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'LoginService')
+data.setCell(11, 2, 'frontEndBackage.serviceTest')
+data.setCell(11, 3, 20);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'showNewMsg')
+data.setCell(12, 2, 'frontEndBackage.serviceTest')
+data.setCell(12, 3, 20);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'sendMsg')
+data.setCell(13, 2, 'frontEndBackage.serviceTest')
+data.setCell(13, 3, 20);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'searchFriend')
+data.setCell(14, 2, 'frontEndBackage.serviceTest')
+data.setCell(14, 3, 20);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'searchPage')
+data.setCell(15, 2, 'frontEndBackage.serviceTest')
+data.setCell(15, 3, 20);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'registrationService')
+data.setCell(16, 2, 'frontEndBackage.serviceTest')
+data.setCell(16, 3, 20);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'registrationService')
+data.setCell(17, 2, 'frontEndBackage.serviceTest')
+data.setCell(17, 3, 19);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'likePageService')
+data.setCell(18, 2, 'frontEndBackage.serviceTest')
+data.setCell(18, 3, 19);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'sendRequest')
+data.setCell(19, 2, 'frontEndBackage.serviceTest')
+data.setCell(19, 3, 18);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'searchFriend')
+data.setCell(20, 2, 'frontEndBackage.serviceTest')
+data.setCell(20, 3, 17);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'showNewMsg')
+data.setCell(21, 2, 'frontEndBackage.serviceTest')
+data.setCell(21, 3, 17);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkRq')
+data.setCell(22, 2, 'frontEndBackage.serviceTest')
+data.setCell(22, 3, 17);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'likePageService')
+data.setCell(23, 2, 'frontEndBackage.serviceTest')
+data.setCell(23, 3, 16);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'createpost')
+data.setCell(24, 2, 'frontEndBackage.serviceTest')
+data.setCell(24, 3, 16);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'searchPage')
+data.setCell(25, 2, 'frontEndBackage.serviceTest')
+data.setCell(25, 3, 16);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'createPage')
+data.setCell(26, 2, 'frontEndBackage.serviceTest')
+data.setCell(26, 3, 16);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'likePost')
+data.setCell(27, 2, 'backEndTestBackage.PostEntityTest')
+data.setCell(27, 3, 14);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'checkRequest')
+data.setCell(28, 2, 'backEndTestBackage.UserEntityTest')
+data.setCell(28, 3, 5);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'getMostTags')
+data.setCell(29, 2, 'backEndTestBackage.PostEntityTest')
+data.setCell(29, 3, 5);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'likePost')
+data.setCell(30, 2, 'backEndTestBackage.PostEntityTest')
+data.setCell(30, 3, 5);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'createPost')
+data.setCell(31, 2, 'backEndTestBackage.PostEntityTest')
+data.setCell(31, 3, 5);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'getPageSearch')
+data.setCell(32, 2, 'backEndTestBackage.PageEntityTest')
+data.setCell(32, 3, 3);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'likePage')
+data.setCell(33, 2, 'backEndTestBackage.PageEntityTest')
+data.setCell(33, 3, 2);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'likePage')
+data.setCell(34, 2, 'backEndTestBackage.PostEntityTest')
+data.setCell(34, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">backEndTestBackage.UserEntityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frontEndBackage.serviceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">backEndTestBackage.UserEntityTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkRequest(aml2, emy2)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkRequest(emy2, amir2)</span>
+                <span class="method-start">487 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">backEndTestBackage.PageEntityTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getPageSearch(com.FCI.SWE.Models.PageEntity@47cee369, emy2, hossam ghaly)</span>
+                <span class="method-start">494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">likePage(com.FCI.SWE.Models.PageEntity@24c96a1a, emy2, hossam ghaly)</span>
+                <span class="method-start">501 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">backEndTestBackage.PostEntityTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPost(true, emy2, emy2, new, bad, public)</span>
+                <span class="method-start">508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPost(true, aml2, aml2, hii, happy, public)</span>
+                <span class="method-start">632 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMostTags()</span>
+                <span class="method-start">640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">likePost(true, 2)</span>
+                <span class="method-start">648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">likePost(true, 6)</span>
+                <span class="method-start">663 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">frontEndBackage.serviceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginService(OK, emy3, 123)</span>
+                <span class="method-start">680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginService(OK, aml3, 123)</span>
+                <span class="method-start">721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">acceptRq(OK, emy3)</span>
+                <span class="method-start">749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">acceptRq(OK, aml3)</span>
+                <span class="method-start">790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkRq(OK, emy3)</span>
+                <span class="method-start">830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkRq(OK, aml3)</span>
+                <span class="method-start">854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPage(OK, emy3, aasrYasenLovers, actor, media)</span>
+                <span class="method-start">876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPage(OK, aml3, yaserGalalLovers, actor, media)</span>
+                <span class="method-start">899 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createpost(OK, emy3, emy3, ya rb n3dy safy, hopeful, public)</span>
+                <span class="method-start">919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createpost(OK, emy3, aml3, brd gaaamd, sick, aml3)</span>
+                <span class="method-start">942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">likePageService(OK, aml3, aasrYasenLovers)</span>
+                <span class="method-start">962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">likePageService(OK, emy3, yaserGalalLovers)</span>
+                <span class="method-start">980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationService(OK, aml3, aml3, 123)</span>
+                <span class="method-start">1004 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registrationService(OK, emy3, emy3, 123)</span>
+                <span class="method-start">1026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchFriend(OK, emy3, aml3)</span>
+                <span class="method-start">1049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchFriend(OK, aml3, emy3)</span>
+                <span class="method-start">1068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchPage(OK, aml3, aasrYasenLovers)</span>
+                <span class="method-start">1092 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchPage(OK, emy3, yaserGalalLovers)</span>
+                <span class="method-start">1113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendMsg(OK, emy3, aml3, hi)</span>
+                <span class="method-start">1132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendMsg(OK, aml3, emy3, ezayk)</span>
+                <span class="method-start">1153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendRequest(OK, aml3, emy3)</span>
+                <span class="method-start">1177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">showAllMsg(OK, emy3, aml3)</span>
+                <span class="method-start">1201 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">showAllMsg(OK, aml3, emy3)</span>
+                <span class="method-start">1229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">showNewMsg(OK, emy3, aml3)</span>
+                <span class="method-start">1273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">showNewMsg(OK, aml3, emy3)</span>
+                <span class="method-start">1294 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1313 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

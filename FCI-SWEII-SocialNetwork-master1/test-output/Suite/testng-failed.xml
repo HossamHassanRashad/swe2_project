@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="frontEndBackage.serviceTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- frontEndBackage.serviceTest -->
+      <class name="backEndTestBackage.PostEntityTest">
+        <methods>
+          <include name="likePage"/>
+          <include name="createPost"/>
+        </methods>
+      </class> <!-- backEndTestBackage.PostEntityTest -->
+      <class name="backEndTestBackage.UserEntityTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- backEndTestBackage.UserEntityTest -->
+      <class name="backEndTestBackage.PageEntityTest">
+        <methods>
+          <include name="likePage" invocation-numbers="0"/>
+          <include name="getPageSearch" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- backEndTestBackage.PageEntityTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

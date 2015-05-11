@@ -19,8 +19,8 @@ public class MsgReplyCommand implements Command{
 				if(noti.getProperty("Reciever").toString().equals(myemail)
 						&&noti.getProperty("Type").toString().equals("MsgReplyCommand")
 						&&noti.getProperty("State").toString().equals("unread")){
-//					noti.setProperty("State", "read");
-//					datastore.put(noti);
+					noti.setProperty("State", "read");
+					datastore.put(noti);
 					Sender = noti.getProperty("Sender").toString();
 				 Result =	obj.showNewMsg(myemail, Sender);
 				}

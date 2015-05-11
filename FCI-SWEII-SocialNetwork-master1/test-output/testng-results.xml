@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="35" passed="32">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1318" started-at="2015-05-11T00:44:12Z" finished-at="2015-05-11T00:44:14Z">
+    <groups>
+      <group name="PostEntityTest">
+        <method signature="PostEntityTest.createPost(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="createPost" class="backEndTestBackage.PostEntityTest"/>
+        <method signature="PostEntityTest.getMostTags(java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="getMostTags" class="backEndTestBackage.PostEntityTest"/>
+        <method signature="PostEntityTest.likePage(java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="likePage" class="backEndTestBackage.PostEntityTest"/>
+        <method signature="PostEntityTest.likePost(boolean, java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="likePost" class="backEndTestBackage.PostEntityTest"/>
+      </group> <!-- PostEntityTest -->
+      <group name="Service">
+        <method signature="serviceTest.LoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="LoginService" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.acceptRq(java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="acceptRq" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.checkRq(java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="checkRq" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.createPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="createPage" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.createpost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="createpost" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.likePageService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="likePageService" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.registrationService(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="registrationService" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.searchFriend(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="searchFriend" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.searchPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="searchPage" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.sendMsg(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="sendMsg" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.sendRequest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="sendRequest" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.showAllMsg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="showAllMsg" class="frontEndBackage.serviceTest"/>
+        <method signature="serviceTest.showNewMsg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="showNewMsg" class="frontEndBackage.serviceTest"/>
+      </group> <!-- Service -->
+      <group name="UserEntityTest">
+        <method signature="UserEntityTest.checkRequest(java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.UserEntityTest@27ec6a9a]" name="checkRequest" class="backEndTestBackage.UserEntityTest"/>
+      </group> <!-- UserEntityTest -->
+      <group name="PageEntityTest">
+        <method signature="PageEntityTest.getPageSearch(com.FCI.SWE.Models.PageEntity, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PageEntityTest@3ea4e3ae]" name="getPageSearch" class="backEndTestBackage.PageEntityTest"/>
+        <method signature="PageEntityTest.likePage(com.FCI.SWE.Models.PageEntity, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PageEntityTest@3ea4e3ae]" name="likePage" class="backEndTestBackage.PageEntityTest"/>
+      </group> <!-- PageEntityTest -->
+    </groups>
+    <test name="Test" duration-ms="1318" started-at="2015-05-11T00:44:12Z" finished-at="2015-05-11T00:44:14Z">
+      <class name="frontEndBackage.serviceTest">
+        <test-method status="PASS" signature="LoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="LoginService" duration-ms="39" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="LoginServiceTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginService -->
+        <test-method status="PASS" signature="LoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="LoginService" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="LoginServiceTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginService -->
+        <test-method status="PASS" signature="acceptRq(java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="acceptRq" duration-ms="39" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="acceptRqTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptRq -->
+        <test-method status="PASS" signature="acceptRq(java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="acceptRq" duration-ms="32" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="acceptRqTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptRq -->
+        <test-method status="PASS" signature="checkRq(java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="checkRq" duration-ms="23" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="checkRqTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRq -->
+        <test-method status="PASS" signature="checkRq(java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="checkRq" duration-ms="17" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="checkRqTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRq -->
+        <test-method status="PASS" signature="createPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="createPage" duration-ms="22" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="createPageTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aasrYasenLovers]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[actor]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[media]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPage -->
+        <test-method status="PASS" signature="createPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="createPage" duration-ms="16" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="createPageTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yaserGalalLovers]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[actor]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[media]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPage -->
+        <test-method status="PASS" signature="createpost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="createpost" duration-ms="22" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="createpostTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ya rb n3dy safy]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[hopeful]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createpost -->
+        <test-method status="PASS" signature="createpost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="createpost" duration-ms="16" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="createpostTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[brd gaaamd]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sick]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createpost -->
+        <test-method status="PASS" signature="likePageService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="likePageService" duration-ms="16" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="likePageServiceTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aasrYasenLovers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likePageService -->
+        <test-method status="PASS" signature="likePageService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="likePageService" duration-ms="19" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="likePageServiceTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yaserGalalLovers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likePageService -->
+        <test-method status="PASS" signature="registrationService(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="registrationService" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="registrationServiceTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationService -->
+        <test-method status="PASS" signature="registrationService(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="registrationService" duration-ms="19" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="registrationServiceTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationService -->
+        <test-method status="PASS" signature="searchFriend(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="searchFriend" duration-ms="17" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="searchFriendTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFriend -->
+        <test-method status="PASS" signature="searchFriend(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="searchFriend" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="searchFriendTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFriend -->
+        <test-method status="PASS" signature="searchPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="searchPage" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="searchPageTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aasrYasenLovers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPage -->
+        <test-method status="PASS" signature="searchPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="searchPage" duration-ms="16" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:13Z" data-provider="searchPageTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yaserGalalLovers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPage -->
+        <test-method status="PASS" signature="sendMsg(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="sendMsg" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="sendMsgTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMsg -->
+        <test-method status="PASS" signature="sendMsg(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="sendMsg" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="sendMsgTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ezayk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMsg -->
+        <test-method status="PASS" signature="sendRequest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="sendRequest" duration-ms="18" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="sendRequestTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendRequest -->
+        <test-method status="PASS" signature="showAllMsg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="showAllMsg" duration-ms="27" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="showAllMsgTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showAllMsg -->
+        <test-method status="PASS" signature="showAllMsg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="showAllMsg" duration-ms="38" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="showAllMsgTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showAllMsg -->
+        <test-method status="PASS" signature="showNewMsg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="showNewMsg" duration-ms="20" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="showNewMsgTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showNewMsg -->
+        <test-method status="PASS" signature="showNewMsg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="showNewMsg" duration-ms="17" depends-on-groups="UserEntityTest" started-at="2015-05-11T00:44:14Z" data-provider="showNewMsgTest" finished-at="2015-05-11T00:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showNewMsg -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-05-11T00:44:14Z" finished-at="2015-05-11T00:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- frontEndBackage.serviceTest -->
+      <class name="backEndTestBackage.PostEntityTest">
+        <test-method status="PASS" signature="createPost(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="createPost" duration-ms="122" started-at="2015-05-11T00:44:13Z" data-provider="createPostTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emy2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[new]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[bad]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost -->
+        <test-method status="PASS" signature="createPost(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="createPost" duration-ms="5" started-at="2015-05-11T00:44:13Z" data-provider="createPostTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aml2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aml2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hii]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[happy]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[public]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost -->
+        <test-method status="PASS" signature="getMostTags(java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="getMostTags" duration-ms="5" started-at="2015-05-11T00:44:13Z" data-provider="getMostTagsTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMostTags -->
+        <test-method status="PASS" signature="likePost(boolean, java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="likePost" duration-ms="14" started-at="2015-05-11T00:44:13Z" data-provider="likePostTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likePost -->
+        <test-method status="PASS" signature="likePost(boolean, java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="likePost" duration-ms="5" started-at="2015-05-11T00:44:13Z" data-provider="likePostTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likePost -->
+        <test-method status="FAIL" signature="likePage(java.lang.String)[pri:0, instance:backEndTestBackage.PostEntityTest@40b73194]" name="likePage" duration-ms="0" started-at="2015-05-11T00:44:13Z" depends-on-methods="backEndTestBackage.PostEntityTest.createPost" finished-at="2015-05-11T00:44:13Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method likePage requires 1 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method likePage requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likePage -->
+      </class> <!-- backEndTestBackage.PostEntityTest -->
+      <class name="backEndTestBackage.UserEntityTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:backEndTestBackage.UserEntityTest@27ec6a9a]" name="setUp" is-config="true" duration-ms="42" started-at="2015-05-11T00:44:12Z" finished-at="2015-05-11T00:44:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:frontEndBackage.serviceTest@32db96ac]" name="setUp" is-config="true" duration-ms="1" started-at="2015-05-11T00:44:12Z" finished-at="2015-05-11T00:44:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkRequest(java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.UserEntityTest@27ec6a9a]" name="checkRequest" duration-ms="428" started-at="2015-05-11T00:44:12Z" data-provider="checkRequestTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aml2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRequest -->
+        <test-method status="PASS" signature="checkRequest(java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.UserEntityTest@27ec6a9a]" name="checkRequest" duration-ms="5" started-at="2015-05-11T00:44:13Z" data-provider="checkRequestTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emy2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amir2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRequest -->
+      </class> <!-- backEndTestBackage.UserEntityTest -->
+      <class name="backEndTestBackage.PageEntityTest">
+        <test-method status="FAIL" signature="getPageSearch(com.FCI.SWE.Models.PageEntity, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PageEntityTest@3ea4e3ae]" name="getPageSearch" duration-ms="3" started-at="2015-05-11T00:44:13Z" data-provider="getPageSearchTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.FCI.SWE.Models.PageEntity@47cee369]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hossam ghaly]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [com.FCI.SWE.Models.PageEntity@47cee369]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [com.FCI.SWE.Models.PageEntity@47cee369]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at backEndTestBackage.PageEntityTest.getPageSearch(PageEntityTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageSearch -->
+        <test-method status="FAIL" signature="likePage(com.FCI.SWE.Models.PageEntity, java.lang.String, java.lang.String)[pri:0, instance:backEndTestBackage.PageEntityTest@3ea4e3ae]" name="likePage" duration-ms="2" started-at="2015-05-11T00:44:13Z" data-provider="likePageTest" finished-at="2015-05-11T00:44:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.FCI.SWE.Models.PageEntity@24c96a1a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emy2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hossam ghaly]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [com.FCI.SWE.Models.PageEntity@24c96a1a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [com.FCI.SWE.Models.PageEntity@24c96a1a]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at backEndTestBackage.PageEntityTest.likePage(PageEntityTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likePage -->
+      </class> <!-- backEndTestBackage.PageEntityTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

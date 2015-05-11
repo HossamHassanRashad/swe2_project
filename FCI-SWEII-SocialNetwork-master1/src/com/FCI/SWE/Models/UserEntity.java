@@ -117,8 +117,9 @@ public class UserEntity{
 		System.out.println("d5l search");
 		Query gaeQuery = new Query("users");
 		PreparedQuery pq = datastore.prepare(gaeQuery);
+		
 		for (Entity entity : pq.asIterable()) {
-			System.out.println("tmam");
+			System.out.println("gowa l for");
 			if (entity.getProperty("email").toString().equals(email)) {
 				System.out.println("l2ah fel DB");
 				UserEntity returnedUser = new UserEntity(entity.getProperty(
@@ -129,6 +130,26 @@ public class UserEntity{
 		}	
 		System.out.println("ml2ash 7aga fel usres");
 		return null;
+	}
+	
+	public static boolean getSearch2(String myemail, String email){
+		DatastoreService datastore = DatastoreServiceFactory
+				.getDatastoreService();
+		System.out.println("d5l search");
+		Query gaeQuery = new Query("users");
+		PreparedQuery pq = datastore.prepare(gaeQuery);
+		for (Entity entity : pq.asIterable()) {
+			System.out.println("tmam");
+			if (entity.getProperty("email").toString().equals(email)) {
+				System.out.println("l2ah fel DB");
+//				UserEntity returnedUser = new UserEntity(entity.getProperty(
+//						"name").toString(), entity.getProperty("email")
+//						.toString(), entity.getProperty("password").toString());
+				return true;
+			}
+		}	
+		System.out.println("ml2ash 7aga fel usres");
+		return false;
 	}
 
 	/**
@@ -171,13 +192,16 @@ public class UserEntity{
 				System.out.println("already friends");
 				return false;
 			}
-			else if(employeee.getProperty("friendemail").toString().equals(email)
-					&&employeee.getProperty("mymail").toString().equals(myemail)
-					&&employeee.getProperty("Rqstatus").toString().equals("pending")){
+			else if(employeee.getProperty("friendemail").toString().trim().equals(email.trim())
+					&&employeee.getProperty("mymail").toString().trim().equals(myemail.trim())
+					&&employeee.getProperty("Rqstatus").toString().trim().equals("pending")){
 			System.out.println("already sent request");
 			return false;
 			}
-			System.out.println("mfesh false");
+			System.out.println("friend email"+employeee.getProperty("friendemail").toString()
+					+"myemail"+employeee.getProperty("mymail").toString()+
+					"Rqstatus"+employeee.getProperty("Rqstatus").toString()
+					);
 //			}else if(employeee.getProperty("friendemail").toString().equals(myemail)
 //					&&employeee.getProperty("myemail").toString().equals(email)
 //					&&employeee.getProperty("Rqstatus").toString().equals("accepted")){
