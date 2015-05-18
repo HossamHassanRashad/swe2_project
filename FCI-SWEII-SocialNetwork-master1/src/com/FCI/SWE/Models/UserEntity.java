@@ -371,39 +371,7 @@ public class UserEntity{
 		return result;	
 		}
 
-//	public static Boolean setnotfication(String email,String notfication) {
-//		DatastoreService datastore = DatastoreServiceFactory
-//				.getDatastoreService();	System.out.println("new message");
-//			Query gaeQuery = new Query("notifications");
-//			PreparedQuery pq = datastore.prepare(gaeQuery);
-//			List<Entity> list = pq.asList(FetchOptions.Builder.withDefaults());
-//			Entity noti = new Entity("notifications", list.size() + 1);
-//			noti.setProperty("mail", email);
-//			noti.setProperty("event",notfication);
-//			datastore.put(noti);
-//			return true;
-//	}
-	public static ArrayList<JSONObject> getnotification(String myemail){
-		ArrayList<JSONObject> notifications = null;
-		JSONObject obj = null;
-		DatastoreService datastore = DatastoreServiceFactory
-				.getDatastoreService();
-			Query gaeQuery = new Query("notifications");
-			PreparedQuery pq = datastore.prepare(gaeQuery);
-		for(Entity noti: pq.asIterable()){
-			if(noti.getProperty("Reciever").toString().equals(myemail)
-					&&noti.getProperty("State").toString().equals("unread")){
-				obj.put("Sender", noti.getProperty("Sender").toString());
-				obj.put("Reciever", myemail);
-				obj.put("Msg", noti.getProperty("Msg").toString());
-				obj.put("Type", noti.getProperty("Type").toString());
-				noti.setProperty("State", "read");
-				datastore.put(noti);
-				notifications.add(obj);
-			}
-		}
-			return notifications;
-	}
+
 
 //*************************************phase 2-b********************************
 

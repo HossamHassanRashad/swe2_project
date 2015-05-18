@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.FCI.SWE.Models.PageEntity;
+import com.FCI.SWE.Models.Post;
 import com.FCI.SWE.Models.PostEntity;
 @Test(groups="PostEntityTest")
 public class PostEntityTest {
@@ -16,7 +17,13 @@ public class PostEntityTest {
 	  
 	  @Test(dataProvider ="createPostTest")
 	  public void createPost(boolean res,String myemail,String email,String content,String feel,String Privacy){
-		  boolean check = PostEntity.createPost(myemail, email, content, feel, Privacy);
+		  Post postObj = null;
+		  postObj.setContent(content);
+		  postObj.setOwner(myemail);
+		  postObj.setTo(email);
+		  postObj.setFeel(feel);
+		  postObj.setPrivacy(Privacy);
+		  boolean check = PostEntity.createPost(postObj);
 		  Assert.assertEquals(res, check);
 		  //Assert.assertEquals(res, PostEntity.createPost(myemail, email, content, feel, Privacy));    
 	  }

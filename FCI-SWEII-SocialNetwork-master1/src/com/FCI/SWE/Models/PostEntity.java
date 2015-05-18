@@ -67,11 +67,7 @@ public class PostEntity {
 		privacy = property7;
 	}
 
-	public static Boolean createPost(String myemail,String email,String content,String feel,String Privacy) {
-		
-		//System.out.println(p.getContent());
-		
-		//System.out.println("myemail: "+ myemail + "email: "+ email);
+	public static Boolean createPost(Post postObj){//String myemail,String email,String content,String feel,String Privacy) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		Query gaeQuery = new Query("posts");
@@ -80,18 +76,18 @@ public class PostEntity {
 
 		Entity post = new Entity("posts", list.size() + 2);
 
-		post.setProperty("owner", myemail);
-		post.setProperty("to", email);
-		post.setProperty("content", content);
-		post.setProperty("likes", 0);
-		post.setProperty("feel", feel);
-		post.setProperty("Privacy",Privacy);	
+		post.setProperty("owner", postObj.owner);
+		post.setProperty("to", postObj.to);
+		post.setProperty("content", postObj.content);
+		post.setProperty("likes", postObj.likes);
+		post.setProperty("feel", postObj.feel);
+		post.setProperty("Privacy",postObj.Privacy);	
 		datastore.put(post);
 		
 		Query gaeQuery2 = new Query("Hashtags");
 		PreparedQuery pq2 = datastore.prepare(gaeQuery2);
 		List<Entity> list2 = pq2.asList(FetchOptions.Builder.withDefaults());
-		String hashtags[] = content.split("#");
+		String hashtags[] = postObj.content.split("#");
 		for(int i = 1 ; i < hashtags.length ; i++){
 			String hashtag[] = hashtags[i].split(" ");
 			PreparedQuery pqtemp = datastore.prepare(gaeQuery2);
@@ -101,15 +97,12 @@ public class PostEntity {
 			System.out.println(list10.size());
 			Entity newhashtag = new Entity("Hashtags", list10.size() + 1);
 			newhashtag.setProperty("name", hashtag[0]);
-			newhashtag.setProperty("post", content);
-			newhashtag.setProperty("postowner", myemail);
+			newhashtag.setProperty("post", postObj.content);
+			newhashtag.setProperty("postowner", postObj.owner);
 			datastore.put(newhashtag);
 			increaseCount(newhashtag.getProperty("name").toString());
 		}
-		
-		
 		return true;
-
 	}
 	
 	public static void increaseCount(String name){
@@ -160,7 +153,7 @@ public class PostEntity {
 		}
 		return res;
 		}
-	public static Vector<PostEntity> userTimeline(String email){
+	public static Vector<PostEntity> viewUserTimeline(String email){
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		Vector<PostEntity> res = new Vector<PostEntity>();

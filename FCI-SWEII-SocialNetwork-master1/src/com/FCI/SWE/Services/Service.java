@@ -28,6 +28,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.PageEntity;
+import com.FCI.SWE.Models.Post;
 import com.FCI.SWE.Models.PostBuilder;
 import com.FCI.SWE.Models.PostEntity;
 import com.FCI.SWE.Models.UserEntity;
@@ -68,17 +69,6 @@ public class Service{
 	@POST
 	@Path("/RegistrationService")
 	public String registrationService(@FormParam("uname") String uname,
-			@FormParam("email") String email, @FormParam("password") String pass) {
-		UserEntity user = new UserEntity(uname, email, pass);
-		user.saveUser();
-		JSONObject object = new JSONObject();
-		object.put("Status", "OK");
-		return object.toString();
-	}
-	
-	@POST
-	@Path("/sendRequest")
-	public String sendRequest(@FormParam("uname") String uname,
 			@FormParam("email") String email, @FormParam("password") String pass) {
 		UserEntity user = new UserEntity(uname, email, pass);
 		user.saveUser();
@@ -226,22 +216,6 @@ public class Service{
 		return object.toString();
 	}
 	
-	@POST
-	@Path("/getnotification")
-	public JSONObject getnotification(String myemail){
-		JSONObject object = new JSONObject();
-		ArrayList<JSONObject> nos;
-		nos = UserEntity.getnotification(myemail);
-		if(!nos.equals(null)){
-			object.put("Status", "OK");
-			object.put("myemail", myemail);
-			object.put("notifications", nos);
-		}else{
-			object.put("Status", "Failed");
-		}
-		
-		return object;
-	}
 //************ phase 2-b*******
 	@POST
 	@Path("/createPost")
@@ -257,9 +231,16 @@ public class Service{
 		obj.setFeel(feel);
 		obj.setPrivacy(privacy);
 		obj.Build();
-		System.out.println("test createPost");
+		Post postObj = null;
+		postObj.setContent(content);
+		postObj.setOwner(myemail);
+		postObj.setTo(email);
+		postObj.setLikes(0);
+		postObj.setFeel(feel);
+		postObj.setPrivacy(privacy);
 		
-		boolean create = PostEntity.createPost(myemail,email,content, feel , privacy);
+		
+		boolean create = PostEntity.createPost(postObj);
 		System.out.println("ntegt l create "+create);
 		JSONObject object = new JSONObject();
 		object.put("Status", "OK");
@@ -339,7 +320,7 @@ public class Service{
 	@POST
 	@Path("/viewUserTimeline")
 	public String viewUserTimeline( @FormParam("myemail") String myemail,@FormParam("email") String email){
-		Vector<PostEntity> res = PostEntity.userTimeline(email);
+		Vector<PostEntity> res = PostEntity.viewUserTimeline(email);
 		JSONArray returnedJSON = new JSONArray();
 		System.out.println("feel: "+res.get(0).getFeel());
 		
